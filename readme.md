@@ -1,38 +1,33 @@
 # Task Organizer CLI - Dart
 
-Aplicativo simples de terminal para gerenciar tarefas e hábitos diários.
+Aplicativo simples de terminal para organizar tarefas do dia a dia.
 
 ## Funcionalidades
 
-- Adicionar tarefas com categoria
-- Listar tarefas pendentes e concluídas
-- Marcar como concluída
-- Remover tarefas
+- Adicionar tarefas
+- Listar tarefas (mostrando se estão pendentes ou concluídas)
+- Marcar tarefas como concluídas
 
 ## Tecnologias
 
 - Dart
 - Execução via terminal
 - Programação orientada a objetos
-- Organização modular do código
+- Código organizado em arquivos separados
 
-## Como rodar
+## Como executar
+
+No terminal, execute:
 
 ```bash
 dart run bin/main.dart
+```
 
+## Estrutura do projeto
 
-Exemplo de uso no terminal:
-=== Task Organizer ===
-
-[1] Adicionar nova tarefa
-[2] Listar tarefas
-[3] Marcar tarefa como concluída
-[4] Remover tarefa
-[5] Sair
-
-> Digite uma opção: 1
-
-Digite o nome da tarefa: Estudar Git
-Categoria (Pessoal / Trabalho): Trabalho
-Tarefa adicionada com sucesso!
+```
+lib/
+  models/
+    task.dart      # Classe que representa uma tarefa
+bin/
+  main.dart        # Código principal
